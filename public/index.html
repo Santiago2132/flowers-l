@@ -4,19 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flower App</title>
-
+    <link rel="icon" type="image/png" href="https://cdn.glitch.global/bf813e1f-7084-4504-ad2e-94db114fce8e/rosa.png?v=1750173885946" />
     <!-- Open Graph meta tags -->
     <meta property="og:title" content="Interactive Flower Generator">
     <meta property="og:description" content="Create beautiful blooming flowers with a click or tap. Choose from various flower types including daisies, roses, sunflowers, tulips, and cherry blossoms.">
-    <meta property="og:image" content="./screenshot.png">
+    <meta property="og:image" content="/images/screenshot.png">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://grow-a-flower.web.app/">
-    
     <!-- Twitter Card tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Interactive Flower Generator">
     <meta name="twitter:description" content="Create beautiful blooming flowers with a click or tap.">
-    <meta name="twitter:image" content="./screenshot.png">
+    <meta name="twitter:image" content="/images/screenshot.png">
     <style>
         body {
             margin: 0;
@@ -92,7 +91,7 @@
             color: #333;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
             z-index: 10;
-            pointer-events: none; /* Permite que los clics pasen al lienzo */
+            pointer-events: none;
             animation: fadeIn 2s ease-in;
         }
         @keyframes fadeIn {
@@ -100,10 +99,10 @@
             to { opacity: 1; }
         }
     </style>
-    <!-- Import the p5.js library -->
+    <!-- Import the p5.js library (only once) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.min.js"></script>
-    <!-- Import your app.js file -->
-    <script src="app.js"></script>
+    <!-- Import your app.js file (only once) -->
+    <script src="/app.js"></script>
 </head>
 <body>
     <div id="flower-selector">
@@ -121,7 +120,5 @@
         <p>✨Feliz Cumpleaños Lorena!✨</p>
         <p>🌻Toca en cualquier parte y tendrás una flor, espero te guste :)🌹</p>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
-    <script src="app.js"></script>
 </body>
 </html>
